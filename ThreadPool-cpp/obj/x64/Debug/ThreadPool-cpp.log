@@ -1,0 +1,15 @@
+﻿  正在验证源
+  正在将源远程复制到“192.168.60.130”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  main.cpp
+D:\repos\Linux test\ThreadPool-cpp\ThreadPool.cpp(208,7): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+D:\repos\Linux test\ThreadPool-cpp\ThreadPool.cpp(208,7): warning :    int queueSize = pool->taskQ->taskNumber();
+D:\repos\Linux test\ThreadPool-cpp\ThreadPool.cpp(208,7): warning :        ^~~~~~~~~
+D:\repos\Linux test\ThreadPool-cpp\ThreadPool.cpp(184,3): warning : deleting ‘void*’ is undefined [-Wdelete-incomplete]
+D:\repos\Linux test\ThreadPool-cpp\ThreadPool.cpp(184,3): warning :    delete task.arg;
+D:\repos\Linux test\ThreadPool-cpp\ThreadPool.cpp(184,3): warning :    ^~~~~~
+  正在链接对象
+  ThreadPool-cpp.vcxproj -> D:\repos\Linux test\ThreadPool-cpp\bin\x64\Debug\ThreadPool-cpp.out

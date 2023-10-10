@@ -1,0 +1,30 @@
+﻿  正在验证源
+  正在将源远程复制到“192.168.60.130”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  threadpool.c
+D:\repos\Linux test\ThreadPool\threadpool.c(49,58): warning : conversion to ‘long unsigned int’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+D:\repos\Linux test\ThreadPool\threadpool.c(49,58): warning :    pool->threadIDs = (pthread_t*)malloc(sizeof(pthread_t) * max);
+D:\repos\Linux test\ThreadPool\threadpool.c(49,58): warning :                                                           ^
+D:\repos\Linux test\ThreadPool\threadpool.c(56,48): warning : conversion to ‘long unsigned int’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+D:\repos\Linux test\ThreadPool\threadpool.c(56,48): warning :    memset(pool->threadIDs, 0, sizeof(pthread_t) * max);
+D:\repos\Linux test\ThreadPool\threadpool.c(56,48): warning :                                                 ^
+D:\repos\Linux test\ThreadPool\threadpool.c(73,44): warning : conversion to ‘long unsigned int’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+D:\repos\Linux test\ThreadPool\threadpool.c(73,44): warning :    pool->taskQ = (Task*)malloc(sizeof(Task) * queueSize);   //!!!!!
+D:\repos\Linux test\ThreadPool\threadpool.c(73,44): warning :                                             ^
+D:\repos\Linux test\ThreadPool\threadpool.c(97,8): warning : passing argument 1 of ‘free’ makes pointer from integer without a cast [-Wint-conversion]
+D:\repos\Linux test\ThreadPool\threadpool.c(97,8): warning :    free(pool && pool->threadIDs);
+D:\repos\Linux test\ThreadPool\threadpool.c(97,8): warning :         ^~~~
+/usr/include/stdlib.h(563,13): message : expected ‘void *’ but argument is of type ‘int’
+/usr/include/stdlib.h(563,13): message :  extern void free (void *__ptr) __THROW;
+/usr/include/stdlib.h(563,13): message :              ^~~~
+D:\repos\Linux test\ThreadPool\threadpool.c(101,8): warning : passing argument 1 of ‘free’ makes pointer from integer without a cast [-Wint-conversion]
+D:\repos\Linux test\ThreadPool\threadpool.c(101,8): warning :    free(pool && pool->taskQ);
+D:\repos\Linux test\ThreadPool\threadpool.c(101,8): warning :         ^~~~
+/usr/include/stdlib.h(563,13): message : expected ‘void *’ but argument is of type ‘int’
+/usr/include/stdlib.h(563,13): message :  extern void free (void *__ptr) __THROW;
+/usr/include/stdlib.h(563,13): message :              ^~~~
+  正在链接对象
+  ThreadPool.vcxproj -> D:\repos\Linux test\ThreadPool\bin\x64\Debug\ThreadPool.out
